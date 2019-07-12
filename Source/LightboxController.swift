@@ -397,7 +397,7 @@ extension LightboxController: PageViewDelegate {
 
   func pageViewDidZoom(_ pageView: PageView) {
     let duration = pageView.hasZoomed ? 0.1 : 0.5
-    toggleControls(pageView: pageView, visible: !pageView.hasZoomed, duration: duration, delay: 0.5)
+    // toggleControls(pageView: pageView, visible: !pageView.hasZoomed, duration: duration, delay: 0.5)
   }
 
   func pageView(_ pageView: PageView, didTouchPlayButton videoURL: URL) {
@@ -409,8 +409,8 @@ extension LightboxController: PageViewDelegate {
 
     imageTouchDelegate?.lightboxController(self, didTouch: images[currentPage], at: currentPage)
 
-    let visible = (headerView.alpha == 1.0)
-    toggleControls(pageView: pageView, visible: !visible)
+    // let visible = (headerView.alpha == 1.0)
+    // toggleControls(pageView: pageView, visible: !visible)
   }
 }
 
